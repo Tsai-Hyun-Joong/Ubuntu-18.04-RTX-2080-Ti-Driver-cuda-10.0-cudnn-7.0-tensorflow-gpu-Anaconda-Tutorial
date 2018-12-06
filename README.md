@@ -44,7 +44,13 @@ Don't forget to give me a star if you like it, thank you!
     
         ``` nvidia-smi ```
         
-        ``` nivida-settings ```
+        ``` nvidia-settings ```
+        
+        If there are some troubles, remove the driver, and run the installer:
+        
+        ``` sudo apt-get remove –purge nvidia* ```
+        
+        ``` sudo ./NVIDIA-Linux-x86_64-410.78.run --no-opengl-files ```
         
 * # CUDA
     
@@ -70,6 +76,14 @@ Don't forget to give me a star if you like it, thank you!
     
         ``` nvcc -V ```
 
+        If there are some troubles, remove CUDA, and run the installer:
+        
+        ``` cd /usr/local/cuda/bin ```
+        
+        ``` sudo ./uninstall_cuda_10.0.pl ```
+        
+        ``` sudo ./NVIDIA-Linux-x86_64-410.78.run --no-opengl-libs ```
+
 * # cuDNN
 
     * Version: cuDNN v7.4.1
@@ -89,9 +103,6 @@ Don't forget to give me a star if you like it, thank you!
         ``` sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn* ```
 
 * # Hey, Just Wait. 
-    
-    * There are plenty of tutorials you can find to install the driver, CUDA and cuDNN,
-    so I don't describe them in sooo detail. (For example, if you have dual graphics cards in your laptop, trouble may happen.)
     
     * Up to now, if everything is ok. Go Fighting!!!
 
