@@ -256,6 +256,6 @@ The reason we configure the environment as following is that tensorflow r1.* onl
             
             ```pip install /tmp/tensorflow_pkg/tensorflow-version-tags.whl```
             
-* # Congratulation! 
+* # Congratulations! 
 
 * I'm new here. Your star is the best encouragement! 
