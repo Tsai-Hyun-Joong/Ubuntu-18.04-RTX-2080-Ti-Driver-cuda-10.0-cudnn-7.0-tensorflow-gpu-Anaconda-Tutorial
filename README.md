@@ -50,7 +50,7 @@ The reason we configure the environment as following is that tensorflow r1.* onl
         
         If there are some troubles, remove the driver, and run the installer:
         
-        ``` sudo apt-get remove –purge nvidia* ```
+        ``` sudo apt-get remove --purge nvidia* ```
         
         ``` sudo ./NVIDIA-Linux-x86_64-410.78.run --no-opengl-files ```
         
