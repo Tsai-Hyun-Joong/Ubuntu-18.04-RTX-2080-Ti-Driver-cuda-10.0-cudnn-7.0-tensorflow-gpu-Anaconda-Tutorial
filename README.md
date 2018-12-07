@@ -4,7 +4,7 @@ This is a tutorial to configure the environment.
 
 Don't forget to give me a star if you like it, thank you!
 
-The reason we configure the environment as following is that tensorflow r1.* only support cuda 9.0 while RTX-2080-Ti only support cuda 10.0. Accidentally using cuda 9.0 with RTX-2080-Ti with tensoflow-gpu will cause core dumped sometimes. So we alternatively choose to compile tensorflow-gpu with cuda10.0 ourselves. Hope we can save you some time!
+The reason we configure the environment as following is that tensorflow r1.* only support cuda 9.0 while RTX-2080-Ti only support cuda 10.0. Accidentally using cuda 9.0 with RTX-2080-Ti with tensoflow-gpu will cause core dumped sometimes. So we alternatively choose to compile tensorflow-gpu with cuda 10.0 ourselves. Hope we can save you some time!
 
 * # Before NVIDIA Driver Installation
 
@@ -106,7 +106,7 @@ The reason we configure the environment as following is that tensorflow r1.* onl
 
 * # Hey, Just Wait. 
     
-    * Up to now, if everything is ok. Go Fighting!!!
+    * Up to now, if everything is ok, Go Fighting to the end!!!
 
 * # Anaconda
     * Download and Install Anaconda
