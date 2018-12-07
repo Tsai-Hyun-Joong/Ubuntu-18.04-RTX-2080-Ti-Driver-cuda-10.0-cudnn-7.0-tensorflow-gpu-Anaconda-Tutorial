@@ -4,6 +4,8 @@ This is a tutorial to configure the environment.
 
 Don't forget to give me a star if you like it, thank you!
 
+The reason we configure the environment as following is that tensorflow r1.* only support cuda 9.0 while RTX-2080-Ti only support cuda 10.0. Accidentally using cuda 9.0 with RTX-2080-Ti with tensoflow-gpu will cause core dumped sometimes. So we alternatively choose to compile tensorflow-gpu with cuda10.0 ourselves. Hope we can save you some time!
+
 * # Before NVIDIA Driver Installation
 
     * Disable the Nouveau Drivers
@@ -151,14 +153,8 @@ Don't forget to give me a star if you like it, thank you!
             ``` sudo apt-get install pkg-config zip g++ zlib1g-dev unzip python```
             
         * Download Bazel Installer
+            Note: We use version 0.18.0 here, using version 0.19.0 or higher has caused some problems when we're trying. But you can still try if you like to.    
         
-            If you want to download it to your Home:
-            ```
-            wget https://github.com/bazelbuild/bazel/releases/download/0.18.0/bazel-0.18.0-installer-linux-x86_64.sh
-            ```
-            ``` cd ~ ```
-            
-            or you want to download it to your Downloads:
             ```
             wget https://github.com/bazelbuild/bazel/releases/download/0.18.0/bazel-0.18.0-installer-linux-x86_64.sh -P ~/Downloads
             ```
@@ -203,7 +199,7 @@ Don't forget to give me a star if you like it, thank you!
           
           Note: [Y/n] means the default is Y, and vice versa.
          
-          Note: The questions I don't mention are default, just press Enter to choose the default. 
+          Note: The questions I do not mention are default, just press Enter to choose the default. 
           
           Note: There may be two possible locations of python.
           
@@ -212,6 +208,7 @@ Don't forget to give me a star if you like it, thank you!
                 2. /home/YourUserAccount/.conda/envs/py35/bin/python3.5
                 
                 The first one often happens in desktop computers, while the second one in laptops.
+          Note: It seems that python3.7 is not compatible, we use python3.5 here.
         
             ```
             $ ./configure
